@@ -1,0 +1,42 @@
+.grid {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:
+    "top top top top clock"
+    "left main main main right"
+    "left main main main right"
+    "left main main main right"
+    "bottom bottom bottom bottom bottom";
+}
+
+.main {
+  grid-area: main;
+  background-color: white;
+}
+
+.top {
+  grid-area: top;
+  background-color: green;
+}
+
+.clock {
+  grid-area: clock;
+  background-color: blue;
+}
+
+.left {
+  grid-area: left;
+  background-color: red;
+}
+
+.right {
+  grid-area: right;
+  background-color: yellow;
+}
+
+.bottom {
+  grid-area: bottom;
+  background-color: purple;
+}
